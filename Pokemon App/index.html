@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Search</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+      <!-- Latest Font Awesome CDN -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+    <h1><img src="pokemon-title.png" /></h1>
+
+    <!-- Search Input and Button -->
+    <input
+      id="search-input"
+      type="text"
+      placeholder="Enter Pokémon name or ID"
+      required
+    />
+    <button id="search-button">
+      <span>Search</span>
+      <i class="fas fa-search"></i>
+    </button>
+
+    <!-- Pokémon Information Display -->
+    <div id="pokemon-info">
+      <p><strong>Pokémon Name: </strong><span id="pokemon-name"></span></p>
+      <p><strong>ID: </strong><span id="pokemon-id"></span></p>
+      <p><strong>Weight: </strong><span id="weight"></span></p>
+      <p><strong>Height: </strong><span id="height"></span></p>
+      <p><strong>HP: </strong><span id="hp"></span></p>
+      <p><strong>Attack: </strong><span id="attack"></span></p>
+      <p><strong>Defense: </strong><span id="defense"></span></p>
+      <p><strong>Special Attack: </strong><span id="special-attack"></span></p>
+      <p>
+        <strong>Special Defense: </strong><span id="special-defense"></span>
+      </p>
+      <p><strong>Speed: </strong><span id="speed"></span></p>
+
+      <!-- Types of Pokémon -->
+      <div id="types"></div>
+
+      <!-- Pokémon Sprite -->
+      <img
+        id="sprite"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png"
+        alt="Pokémon Sprite"
+      />
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Soft background color */
+    margin: 0;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text inside the body */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3e721d;
+    text-transform: uppercase;
+}
+
+/* Search Input and Button */
+#search-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 2px solid #ffcb05;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 150px;
+    position: relative;
+    border: 2px solid #ffcb05;
+    border-radius: 5px;
+    background-color: #ffcb05;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9f00;
+    cursor: pointer;
+}
+button span{
+    left: 0;
+    position: relative;
+    transition: all 0.2s ease-out 0s;
+  }
+  
+  button i{
+    width: 18px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -9px;
+    line-height: 18px;
+    opacity: 0;
+    transition: all 0.2s ease-out 0s;
+  }
+  
+  button:hover span{
+    left: -18px;
+  }
+  
+  button:hover i{
+    opacity: 1;
+    right: 24px;
+  }
+/* Pokémon Card Styling */
+#pokemon-info {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+/* Pokémon Name */
+#pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Pokémon ID */
+#pokemon-id {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Pokémon Sprite (Image) */
+#sprite {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Stats Section */
+p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+strong {
+    color: #555;
+}
+
+/* Types */
+#types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#types span {
+    background-color: #ffcb05;
+    color: #3e721d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+
